@@ -49,7 +49,7 @@ global.location = "ɪɴᴅᴏɴᴇsɪᴀ, ʙᴀɴᴅᴜɴɢ, ᴊᴀᴡᴀ ʙᴀ�
 
 //bot bombdy
 global.botname = "ʏᴀɴɴ-ʙᴏᴛᴢ" //ur bot name
-global.websitex = "https://youtu.be/xn9RatOrbuI" //ur website
+global.websitex = "https://yann-executed-team.blogspot.com" //ur website
 global.vidmenu = { url: 'https://a.uguu.se/zlzQZvXH.mp4' } //gif and video menu
 global.packname = "ʏᴀɴɴ-ʙᴏᴛ\n\n\nsᴛɪᴄᴋᴇʀ"
 global.author = "ᴏᴡɴᴇʀ : 6282252285143\n\n✵"
@@ -60,7 +60,7 @@ global.ownernummenu = ['6282252285143'] //ur owner number in menu and all
 global.watermark = "✯ ʏᴀɴɴ-ʙᴏᴛᴢ" //ur watermark
 global.botscript = "https://github.com/RyanStore/CheemsBot-MD3"
 global.linkz1 = "https://chat.whatsapp.com/B9cQxA0NWrXHtFclMS5awJ"
-global.linkz2 = "https://chat.whatsapp.com/DMqCCHW4Uvb2Kd4Cpus1vC"
+global.linkz2 = "https://chat.whatsapp.com/B9cQxA0NWrXHtFclMS5awJ"
 
 //Bot theme media
 global.thum = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur thumb pic
@@ -94,19 +94,19 @@ global.sessionName = "session"
 global.antitags = true
 global.prefa = ['','!','.','🐦','🐤','🗿']
 global.mess = {
-    success: '*ᴅᴏɴᴇ*',
-    admin: 'ғɪᴛᴜʀ ᴋʜᴜsᴜs ᴀᴅᴍɪɴ ɢʀᴜᴘ!',
-    botAdmin: 'ᴊᴀᴅɪᴋᴀɴ ʙᴏᴛ sᴇʙᴀɢᴀɪ ᴀᴅᴍɪɴ ᴜɴᴛᴜᴋ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ғɪᴛᴜʀ ɪɴɪ',
-    owner: 'ғɪᴛᴜʀ ᴋʜᴜsᴜs ᴏᴡɴᴇʀ ʙᴏᴛ',
+    success: '*ᴅᴏɴᴇ🤖*',
+    admin: 'ғɪᴛᴜʀ ᴋʜᴜsᴜs ᴀᴅᴍɪɴ ɢʀᴜᴘ!😾',
+    botAdmin: 'ᴊᴀᴅɪᴋᴀɴ ʙᴏᴛ sᴇʙᴀɢᴀɪ ᴀᴅᴍɪɴ ᴜɴᴛᴜᴋ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ғɪᴛᴜʀ ɪɴɪ😈',
+    owner: 'ғɪᴛᴜʀ ᴋʜᴜsᴜs ᴏᴡɴᴇʀ ʙᴏᴛ😼',
     group: 'ᴋʜᴜsᴜs ᴅɪ ɢʀᴜᴘ😼',
     private: 'ᴋʜᴜsᴜs ᴘʀɪᴠᴀᴛᴇ ᴍᴇssᴀɢᴇ😼',
-    bot: 'ғɪᴛᴜʀ ᴋʜᴜsᴜs ʙᴏᴛ',
-    wait: 'sᴇᴅᴀɴɢ ᴅɪ ᴘʀᴏsᴇs....',
-    linkm: 'ᴍᴀsᴜᴋᴋᴀɴ ʟɪɴᴋ ɴʏᴀ',
-    error: 'ᴇʀʀᴏʀ!!',
-    ban: 'ᴍᴀᴀғ,ᴋᴀᴍᴜ ᴛᴇʟᴀʜ ᴅɪ ʙᴀɴɴᴇᴅ ᴏʟᴇʜ ᴏᴡɴᴇʀ!!,ʜᴜʙᴜɴɢɪ ᴏᴡɴᴇʀ ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴋᴀ ʙᴀɴɴᴇᴅ!',
-    nsfw: 'ғɪᴛᴜʀ ɴsғᴡ ʙᴇʟᴜᴍ ᴀᴋᴛɪғ !! ,ᴍɪɴᴛᴀ ᴀᴅᴍɪɴ ɢʀᴜᴘ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴀᴋᴛɪғᴋᴀɴ',
-    banChat: 'ʙᴏᴛ ᴛᴇʟᴀʜ ᴅɪ ʙᴀɴɴᴇᴅ ᴜɴᴛᴜᴋ ᴄʜᴀᴛ ɪɴɪ-ᴍɪɴᴛᴀ ᴏᴡɴᴇʀ ᴜɴᴛᴜᴋ ᴜɴʙᴀɴɴᴇᴅ'
+    bot: 'ғɪᴛᴜʀ ᴋʜᴜsᴜs ʙᴏᴛ👿',
+    wait: 'sᴇᴅᴀɴɢ ᴅɪ ᴘʀᴏsᴇs....👿',
+    linkm: 'ᴍᴀsᴜᴋᴋᴀɴ ʟɪɴᴋ ɴʏᴀ👿',
+    error: 'ᴇʀʀᴏʀ!!👹',
+    ban: 'ᴍᴀᴀғ,ᴋᴀᴍᴜ ᴛᴇʟᴀʜ ᴅɪ ʙᴀɴɴᴇᴅ ᴏʟᴇʜ ᴏᴡɴᴇʀ!!,ʜᴜʙᴜɴɢɪ ᴏᴡɴᴇʀ ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴋᴀ ʙᴀɴɴᴇᴅ!😈',
+    nsfw: 'ғɪᴛᴜʀ ɴsғᴡ ʙᴇʟᴜᴍ ᴀᴋᴛɪғ !! ,ᴍɪɴᴛᴀ ᴀᴅᴍɪɴ ɢʀᴜᴘ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴀᴋᴛɪғᴋᴀɴ😈',
+    banChat: 'ʙᴏᴛ ᴛᴇʟᴀʜ ᴅɪ ʙᴀɴɴᴇᴅ ᴜɴᴛᴜᴋ ᴄʜᴀᴛ ɪɴɪ-ᴍɪɴᴛᴀ ᴏᴡɴᴇʀ ᴜɴᴛᴜᴋ ᴜɴʙᴀɴɴᴇᴅ👽'
 }
 global.limitawal = {
     premium: "Infinity",
