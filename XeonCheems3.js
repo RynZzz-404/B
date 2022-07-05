@@ -970,13 +970,13 @@ XeonBotInc.sendMessage(from, {text:`\`\`\`「 Instagram Link Detected 」\`\`\`\
 if (AntiLinkFacebook)
    if (budy.includes("https://facebook.com/")){
 if (!isBotAdmins) return
-bvl = `\`\`\`「 Facebook Link Detected 」\`\`\`\n\nAdmin has sent a facebook link, admin is free to send any link😇`
+bvl = `\`\`\`「 ғᴀᴄᴇʙᴏᴏᴋ ʟɪɴᴋ ᴅᴇᴛᴇᴄᴛ 」\`\`\`\n\nᴀᴅᴍɪɴ ᴍᴇɴɢɪʀɪᴍ ʟɪɴᴋ ғᴀᴄᴇʙᴏᴏᴋ,ᴀᴅᴍɪɴ ʙᴇʙᴀs ᴍᴇɴɢɪʀɪᴍ ʟɪɴᴋ ᴀᴘᴀᴘᴜɴ`
 if (isAdmins) return reply(bvl)
 if (m.key.fromMe) return reply(bvl)
 if (isCreator) return reply(bvl)
 kice = m.sender
 await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
-XeonBotInc.sendMessage(from, {text:`\`\`\`「 Facebook Link Detected 」\`\`\`\n\n@${kice.split("@")[0]} Has been kicked because of sending facebook link in this group`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+XeonBotInc.sendMessage(from, {text:`\`\`\`「 ғᴀᴄᴇʙᴏᴏᴋ ʟɪɴᴋ ᴅᴇᴛᴇᴄᴛ 」\`\`\`\n\n@${kice.split("@")[0]} ᴍᴀᴀғ,ᴋᴀᴍᴜ ᴀᴋᴀɴ ᴅɪ ᴋɪᴄᴋ ᴋᴀʀᴇɴᴀ ᴍᴇɴɢɪʀɪᴍ ʟɪɴᴋ ғᴀᴄᴇʙᴏᴏᴋ`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 } else {
 }
 //antilink telegram by xeon
@@ -997,7 +997,7 @@ XeonBotInc.sendMessage(from, {text:`\`\`\`「 Telegram Link Detected 」\`\`\`\n
 if (AntiLinkTiktok)
    if (budy.includes("https://www.tiktok.com/")){
 if (!isBotAdmins) return
-bvl = `\`\`\`「 Tiktok Link Detected 」\`\`\`\n\nAdmin has sent a tiktok link, admin is free to send any link😇`
+bvl = `\`\`\`「 ᴛɪᴋᴛᴏᴋ ʟɪɴᴋ ᴅᴇᴛᴇᴄᴛ 」\`\`\`\n\nᴀᴅᴍɪɴ ʙᴇʙᴀs ᴍᴇɴɢɪʀɪᴍ ʟɪɴᴋ ᴀᴘᴀᴘᴜɴ`
 if (isAdmins) return reply(bvl)
 if (m.key.fromMe) return reply(bvl)
 if (isCreator) return reply(bvl)
@@ -1010,13 +1010,13 @@ XeonBotInc.sendMessage(from, {text:`\`\`\`「 Tiktok Link Detected 」\`\`\`\n\n
 if (AntiLinkTwitter)
    if (budy.includes("https://twitter.com/")){
 if (!isBotAdmins) return
-bvl = `\`\`\`「 Twitter Link Detected 」\`\`\`\n\nAdmin has sent a twitter link, admin is free to send any link😇`
+bvl = `\`\`\`「 ᴛᴡɪᴛᴛᴇʀ ʟɪɴᴋ ᴅᴇᴛᴇᴄᴛ 」\`\`\`\n\nᴀᴅᴍɪɴ ᴍᴇɴɢɪʀɪᴍ ʟɪɴᴋ ᴛᴡɪᴛᴛᴇʀ,ᴀᴅᴍɪɴ ʙᴇʙᴀs ᴍᴇɴɢɪʀɪᴍ ʟɪɴᴋ ᴀᴘᴀᴘᴜɴ`
 if (isAdmins) return reply(bvl)
 if (m.key.fromMe) return reply(bvl)
 if (isCreator) return reply(bvl)
 kice = m.sender
 await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
-XeonBotInc.sendMessage(from, {text:`\`\`\`「 Tiktok Link Detected 」\`\`\`\n\n@${kice.split("@")[0]} Has been kicked because of sending twitter link in this group`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+XeonBotInc.sendMessage(from, {text:`\`\`\`「 ᴛɪᴋᴛᴏᴋ ʟɪɴᴋ ᴅᴇᴛᴇᴄᴛ 」\`\`\`\n\n@${kice.split("@")[0]} ᴋᴀᴍᴜ ᴀᴋᴀɴ ᴅɪ ᴋɪᴄᴋ ᴋᴀʀᴇɴᴀ ᴍᴇɴɢɪʀɪᴍ ʟɪɴᴋ`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 } else {
 }
 //antilink all by xeon
@@ -1074,7 +1074,7 @@ if (tebaklagu.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
 kuis = true
 jawaban = tebaklagu[m.sender.split('@')[0]]
 if (budy.toLowerCase() == jawaban) {
-await XeonBotInc.sendButtonText(m.chat, [{ buttonId: 'guess song', buttonText: { displayText: 'ᴛᴇʙᴀᴋ ʟᴀɢᴜ' }, type: 1 }], `🎮 Guess The Song 🎮\n\nᴊᴀᴡᴀʙᴀɴ ʙᴇɴᴀʀ 🎉\n\nWant to play again? press the button below`, `${global.botname}`, m)
+await XeonBotInc.sendButtonText(m.chat, [{ buttonId: 'guess song', buttonText: { displayText: 'ᴛᴇʙᴀᴋ ʟᴀɢᴜ' }, type: 1 }], `🎮 ᴛᴇʙᴀᴋ ʟᴀɢᴜ 🎮\n\nᴊᴀᴡᴀʙᴀɴ ʙᴇɴᴀʀ 🎉\n\nɪɴɢɪɴ ʙᴇʀᴍᴀɪɴ ᴋᴇᴍʙᴀʟɪ ? ᴛᴇᴋᴀɴ ʙᴜᴛᴛᴏɴ ᴅɪ ʙᴀᴡᴀʜ`, `${global.botname}`, m)
 delete tebaklagu[m.sender.split('@')[0]]
 } else reply('*ᴊᴀᴡᴀʙᴀɴ sᴀʟᴀʜ !*')
 }
@@ -1083,7 +1083,7 @@ if (tebakgambar.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
 kuis = true
 jawaban = tebakgambar[m.sender.split('@')[0]]
 if (budy.toLowerCase() == jawaban) {
-await XeonBotInc.sendButtonText(m.chat, [{ buttonId: 'guess picture', buttonText: { displayText: 'Guess The Picture' }, type: 1 }], `🎮 Guess The Picture 🎮\n\nᴊᴀᴡᴀʙᴀɴ ʙᴇɴᴀʀ 🎉\n\nWant to play again? press the button below`, `${global.botname}`, m)
+await XeonBotInc.sendButtonText(m.chat, [{ buttonId: 'guess picture', buttonText: { displayText: 'Guess The Picture' }, type: 1 }], `🎮 ᴛᴇʙᴀᴋ ɢᴀᴍʙᴀʀ 🎮\n\nᴊᴀᴡᴀʙᴀɴ ʙᴇɴᴀʀ 🎉\n\nɪɴɢɪɴ ʙᴇʀᴍᴀɪɴ ᴋᴇᴍʙᴀʟɪ ? ᴛᴇᴋᴀɴ ʙᴜᴛᴛᴏɴ ᴅɪ ʙᴀᴡᴀʜ`, `${global.botname}`, m)
 delete tebakgambar[m.sender.split('@')[0]]
 } else reply('*ᴊᴀᴡᴀʙᴀɴ sᴀʟᴀʜ !*')
 }
@@ -1092,7 +1092,7 @@ if (tebakkata.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
 kuis = true
 jawaban = tebakkata[m.sender.split('@')[0]]
 if (budy.toLowerCase() == jawaban) {
-await XeonBotInc.sendButtonText(m.chat, [{ buttonId: 'guess word', buttonText: { displayText: 'Guess The Word' }, type: 1 }], `🎮 Guess The Word 🎮\n\nᴊᴀᴡᴀʙᴀɴ ʙᴇɴᴀʀ 🎉\n\nWant to play again? press the button below`, `${global.botname}`, m)
+await XeonBotInc.sendButtonText(m.chat, [{ buttonId: 'guess word', buttonText: { displayText: 'ᴛᴇʙᴀᴋ ᴋᴀᴛᴀ' }, type: 1 }], `🎮 ᴛᴇʙᴀᴋ ᴋᴀᴛᴀ 🎮\n\nᴊᴀᴡᴀʙᴀɴ ʙᴇɴᴀʀ 🎉\n\nɪɴɢɪɴ ʙᴇʀᴍᴀɪɴ ᴋᴇᴍʙᴀʟɪ ? ᴛᴇᴋᴀɴ ʙᴜᴛᴛᴏɴ ᴅɪ ʙᴀᴡᴀʜ`, `${global.botname}`, m)
 delete tebakkata[m.sender.split('@')[0]]
 } else reply('*ᴊᴀᴡᴀʙᴀɴ sᴀʟᴀʜ !*')
 }
@@ -1102,7 +1102,7 @@ kuis = true
 jawaban = caklontong[m.sender.split('@')[0]]
 deskripsi = caklontong_desk[m.sender.split('@')[0]]
 if (budy.toLowerCase() == jawaban) {
-await XeonBotInc.sendButtonText(m.chat, [{ buttonId: 'guess saying', buttonText: { displayText: 'Guess The Saying' }, type: 1 }], `🎮 Guess The Saying 🎮\n\nᴊᴀᴡᴀʙᴀɴ ʙᴇɴᴀʀ 🎉\n*${deskripsi}*\n\nWant to play again? press the button below`, `${global.botname}`, m)
+await XeonBotInc.sendButtonText(m.chat, [{ buttonId: 'guess saying', buttonText: { displayText: 'ᴄᴀᴋ ʟᴏɴᴛᴏɴɢ' }, type: 1 }], `🎮 ᴄᴀᴋ ʟᴏɴᴛᴏɴɢ 🎮\n\nᴊᴀᴡᴀʙᴀɴ ʙᴇɴᴀʀ 🎉\n*${deskripsi}*\n\nɪɴɢɪɴ ʙᴇʀᴍᴀɪɴ ᴋᴇᴍʙᴀʟɪ ? ᴛᴇᴋᴀɴ ʙᴜᴛᴛᴏɴ ᴅɪ ʙᴀᴡᴀʜ`, `${global.botname}`, m)
 delete caklontong[m.sender.split('@')[0]]
 delete caklontong_desk[m.sender.split('@')[0]]
 } else reply('*ᴊᴀᴡᴀʙᴀɴ sᴀʟᴀʜ !*')
@@ -1112,7 +1112,7 @@ if (tebakkalimat.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
 kuis = true
 jawaban = tebakkalimat[m.sender.split('@')[0]]
 if (budy.toLowerCase() == jawaban) {
-await XeonBotInc.sendButtonText(m.chat, [{ buttonId: 'guess sentence', buttonText: { displayText: 'Guess The Sentence' }, type: 1 }], `🎮 Guess The Sentence 🎮\n\nᴊᴀᴡᴀʙᴀɴ ʙᴇɴᴀʀ 🎉\n\nWant to play again? press the button below`, `${global.botname}`, m)
+await XeonBotInc.sendButtonText(m.chat, [{ buttonId: 'ᴛᴇʙᴀᴋ ᴋᴀʟɪᴍᴀᴛ', buttonText: { displayText: 'ᴛᴇʙᴀᴋ ᴋᴀʟɪᴍᴀᴛ' }, type: 1 }], `🎮 Guess The Sentence 🎮\n\nᴊᴀᴡᴀʙᴀɴ ʙᴇɴᴀʀ 🎉\n\nɪɴɢɪɴ ʙᴇʀᴍᴀɪɴ ᴋᴇᴍʙᴀʟɪ ? ᴛᴇᴋᴀɴ ʙᴜᴛᴛᴏɴ ᴅɪ ʙᴀᴡᴀʜ`, `${global.botname}`, m)
 delete tebakkalimat[m.sender.split('@')[0]]
 } else reply('*ᴊᴀᴡᴀʙᴀɴ sᴀʟᴀʜ !*')
 }
@@ -1121,7 +1121,7 @@ if (tebaklirik.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
 kuis = true
 jawaban = tebaklirik[m.sender.split('@')[0]]
 if (budy.toLowerCase() == jawaban) {
-await XeonBotInc.sendButtonText(m.chat, [{ buttonId: 'guess lyrics', buttonText: { displayText: 'Guess The Lyrics' }, type: 1 }], `🎮 Guess The Lyrics 🎮\n\nᴊᴀᴡᴀʙᴀɴ ʙᴇɴᴀʀ 🎉\n\nWant to play again? press the button below`, `${global.botname}`, m)
+await XeonBotInc.sendButtonText(m.chat, [{ buttonId: 'guess lyrics', buttonText: { displayText: 'ᴛᴇʙᴀᴋ ʟɪʀɪᴋ' }, type: 1 }], `🎮 ᴛᴇʙᴀᴋ ʟɪʀɪᴋ 🎮\n\nᴊᴀᴡᴀʙᴀɴ ʙᴇɴᴀʀ 🎉\n\nɪɴɢɪɴ ʙᴇʀᴍᴀɪɴ ᴋᴇᴍʙᴀʟɪ ? ᴛᴇᴋᴀɴ ʙᴜᴛᴛᴏɴ ᴅɪ ʙᴀᴡᴀʜ`, `${global.botname}`, m)
 delete tebaklirik[m.sender.split('@')[0]]
 } else reply('*ᴊᴀᴡᴀʙᴀɴ sᴀʟᴀʜ !*')
 }
@@ -1130,7 +1130,7 @@ if (tebaktebakan.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
 kuis = true
 jawaban = tebaktebakan[m.sender.split('@')[0]]
 if (budy.toLowerCase() == jawaban) {
-await XeonBotInc.sendButtonText(m.chat, [{ buttonId: 'riddles', buttonText: { displayText: 'Riddles' }, type: 1 }], `🎮 Riddles 🎮\n\nᴊᴀᴡᴀʙᴀɴ ʙᴇɴᴀʀ 🎉\n\nWant to play again? press the button below`, `${global.botname}`, m)
+await XeonBotInc.sendButtonText(m.chat, [{ buttonId: 'riddles', buttonText: { displayText: 'Riddles' }, type: 1 }], `🎮 Riddles 🎮\n\nᴊᴀᴡᴀʙᴀɴ ʙᴇɴᴀʀ 🎉\n\nɪɴɢɪɴ ʙᴇʀᴍᴀɪɴ ᴋᴇᴍʙᴀʟɪ ? ᴛᴇᴋᴀɴ ʙᴜᴛᴛᴏɴ ᴅɪ ʙᴀᴡᴀʜ`, `${global.botname}`, m)
 delete tebaktebakan[m.sender.split('@')[0]]
 } else reply('*ᴊᴀᴡᴀʙᴀɴ sᴀʟᴀʜ !*')
 }
@@ -1202,13 +1202,13 @@ if (jwb && reg.test(m.text) && !roof.pilih && !m.isGroup) {
 roof.pilih = reg.exec(m.text.toLowerCase())[0]
 roof.text = m.text
 reply(`You have chosen ${m.text} ${!roof.pilih2 ? `\n\nWaiting for the opponent to choose` : ''}`)
-if (!roof.pilih2) XeonBotInc.sendText(roof.p2, '_The opponent has chosen_\nNow it is your turn', 0)
+if (!roof.pilih2) XeonBotInc.sendText(roof.p2, '_ʟᴀᴡᴀɴ ᴛᴇʟᴀʜ ᴍᴇᴍɪʟɪʜ_ \nsᴇᴋᴀʀᴀɴɢ ɢɪʟɪʀᴀɴᴍᴜ', 0)
 }
 if (jwb2 && reg.test(m.text) && !roof.pilih2 && !m.isGroup) {
 roof.pilih2 = reg.exec(m.text.toLowerCase())[0]
 roof.text2 = m.text
 reply(`You have chosen ${m.text} ${!roof.pilih ? `\n\nWaiting for the opponent to choose` : ''}`)
-if (!roof.pilih) XeonBotInc.sendText(roof.p, '_The opponent has chosen_\nNow it is your turn', 0)
+if (!roof.pilih) XeonBotInc.sendText(roof.p, '_ʟᴀᴡᴀɴ ᴛᴇʟᴀʜ ᴍᴇᴍɪʟɪʜ_\nsᴇᴋᴀʀᴀɴɢ ɢɪʟɪʀᴀɴᴍᴜ', 0)
 }
 let stage = roof.pilih
 let stage2 = roof.pilih2
@@ -1560,10 +1560,10 @@ const menulist = `┌─❖
 │ᴛᴏᴛᴀʟ ᴄᴏᴍᴍᴀɴᴅ ʜᴀʀɪ ɪɴɪ 📇 : ${jumlahharian}
 │
 └─「 ᴜsᴇʀ ɪɴғᴏ 」
-│ʟᴇᴠᴇʟ : ${levelMenu}
-│xᴘ : ${xpMenu}\ ${reqXp}
-│ʀᴏʟᴇ : ${role}
-│ᴍᴏɴᴇʏ : $${uangku}
+│ʟᴇᴠᴇʟ 📉 : ${levelMenu}
+│xᴘ 🔥 : ${xpMenu}\ ${reqXp}
+│ʀᴏʟᴇ 🚻 : ${role}
+│ᴍᴏɴᴇʏ 💰 : $${uangku}
 │
 └─「 ᴜsᴇʀ ᴄᴏʟʟᴇᴄᴛɪᴏɴ 」
 │ɪʀᴏɴ : ${getBesi(m.sender)}
@@ -1605,17 +1605,17 @@ XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key 
                                 }
                             }, {
                                 callButton: {
-                                    displayText: 'sᴄʀɪᴘᴛ🗞️',
+                                    displayText: 'sᴄʀɪᴘᴛ 🗞️',
                                     url: `${botscript}`
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'ᴀʟʟ ᴍᴇɴᴜ📝',
+                                    displayText: 'ᴀʟʟ ᴍᴇɴᴜ 📝',
                                     id: 'allmenu'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'ʟɪsᴛ ᴍᴇɴᴜ📝',
+                                    displayText: 'ʟɪsᴛ ᴍᴇɴᴜ 📝',
                                     id: 'command'
                                 }  
                             }, {
@@ -1652,10 +1652,10 @@ if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }})
 let buttonmenu = [
         	{ urlButton: { displayText: `ᴡᴇʙsɪᴛᴇ 📨`, url : `${websitex}` } },
-            { urlButton: { displayText: `sᴄʀɪᴘᴛ📒`, url: `${botscript}` } },
-            { quickReplyButton: { displayText: `ᴀʟʟ ᴍᴇɴᴜ📃`, id: 'allmenu'} },
-            { quickReplyButton: { displayText: `ʟɪsᴛ ᴍᴇɴᴜ📚`, id: 'command'} },
-            { quickReplyButton: { displayText: `ᴏᴡɴᴇʀ👤`, id: 'owner'} }
+            { urlButton: { displayText: `sᴄʀɪᴘᴛ 📒`, url: `${botscript}` } },
+            { quickReplyButton: { displayText: `ᴀʟʟ ᴍᴇɴᴜ 📃`, id: 'allmenu'} },
+            { quickReplyButton: { displayText: `ʟɪsᴛ ᴍᴇɴᴜ 📚`, id: 'command'} },
+            { quickReplyButton: { displayText: `ᴏᴡɴᴇʀ 👤`, id: 'owner'} }
         	]
         	XeonBotInc.sendMessage(m.chat, { caption: menulist, document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'), mimetype: `${docs}`, fileName: `${ownername}`, templateButtons: buttonmenu, footer: `${botname}`, mentionedJid: [m.sender] })
         	break
@@ -1691,25 +1691,25 @@ case 'me': case 'inventory': case 'profile':{
   if (!isInventoriBuruan){ addInventoriBuruan(m.sender) }
      
      var flob = await getBuffer(picak+'User Profile')
-     let teksehmazeh = `*── 「 BIO PROFILE 」 ──*\n\n`
-     teksehmazeh += `*❤️Your Blood* : ${getDarah(m.sender)}\n`
-     teksehmazeh += `*◻️️Your Iron* : ${getBesi(m.sender)}\n`
-     teksehmazeh += `*🌟Your Gold* : ${getEmas(m.sender)}\n`
-     teksehmazeh += `*💎Your Emerald* : ${getEmerald(m.sender)}\n`
-     teksehmazeh += `*🧪Your Potion* : ${getPotion(m.sender)}\n\n`
-     teksehmazeh += `*── 「 HUNT RESULT 🏹 」 ──*\n`
-     teksehmazeh += `*🐟Fish* : ${getIkan(m.sender)}\n`
-     teksehmazeh += `*🐔Chicken* : ${getAyam(m.sender)}\n`
-     teksehmazeh += `*🐇Rabbit* : ${getKelinci(m.sender)}\n`
-     teksehmazeh += `*🐑Sheep* : ${getDomba(m.sender)}\n`
-     teksehmazeh += `*🐄Cow* : ${getSapi(m.sender)}\n`
-     teksehmazeh += `*🐘Elephant* : ${getGajah(m.sender)}\n\n`
+     let teksehmazeh = `*── 「 ᴘʀᴏғɪʟᴇ ᴜsᴇʀ 」 ──*\n\n`
+     teksehmazeh += `*❤️ʏᴏᴜʀ ʙʟᴏᴏᴅ* : ${getDarah(m.sender)}\n`
+     teksehmazeh += `*◻️️ʏᴏᴜʀ ɪʀᴏɴ* : ${getBesi(m.sender)}\n`
+     teksehmazeh += `*🌟ʏᴏᴜʀ ɢᴏʟᴅ* : ${getEmas(m.sender)}\n`
+     teksehmazeh += `*💎ʏᴏᴜʀ ᴅɪᴀᴍᴏɴᴅ* : ${getEmerald(m.sender)}\n`
+     teksehmazeh += `*🧪ʏᴏᴜʀ ᴘᴏᴛɪᴏɴ* : ${getPotion(m.sender)}\n\n`
+     teksehmazeh += `*── 「 ʜᴜɴᴛ ʀᴇsᴜʟᴛ 🏹 」 ──*\n`
+     teksehmazeh += `*🐟ғɪsʜ* : ${getIkan(m.sender)}\n`
+     teksehmazeh += `*🐔ᴄʜɪᴄᴋᴇɴ* : ${getAyam(m.sender)}\n`
+     teksehmazeh += `*🐇ʀᴀʙʙɪᴛ* : ${getKelinci(m.sender)}\n`
+     teksehmazeh += `*🐑sʜᴇᴇᴏ* : ${getDomba(m.sender)}\n`
+     teksehmazeh += `*🐄ᴄᴏᴡ* : ${getSapi(m.sender)}\n`
+     teksehmazeh += `*🐘ᴇʟᴇᴘʜᴀɴᴛ* : ${getGajah(m.sender)}\n\n`
      teksehmazeh += `_*${pushname}*_`
      let butRun = [
-        	{ urlButton: { displayText: `ᴡᴇʙsɪᴛᴇ📨`, url : `${websitex}` } },
-        	{ urlButton: { displayText: `sᴄʀɪᴘᴛ📒`, url : `${botscript}` } },
-            { quickReplyButton: { displayText: `ᴏᴡɴᴇʀ👤`, id: 'owner'}},
-            { quickReplyButton: { displayText: `ʟᴇᴀᴅᴇʀʙᴏᴀʀᴅ📜`, id: 'leaderboard'} }
+        	{ urlButton: { displayText: `ᴡᴇʙsɪᴛᴇ 📨`, url : `${websitex}` } },
+        	{ urlButton: { displayText: `sᴄʀɪᴘᴛ 📒`, url : `${botscript}` } },
+            { quickReplyButton: { displayText: `ᴏᴡɴᴇʀ 👤`, id: 'owner'}},
+            { quickReplyButton: { displayText: `ʟᴇᴀᴅᴇʀʙᴏᴀʀᴅ 📜`, id: 'leaderboard'} }
         	]
         	XeonBotInc.sendMessage(m.chat, { caption: teksehmazeh, document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'), mimetype: `${docs}`, fileName: `Want to adventure again?`, templateButtons: butRun, footer: `${botname}`, mentions: [m.sender] })
         	}
@@ -1729,10 +1729,10 @@ mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
 })
 XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️ᴘᴇʀɪɴɢᴀᴛᴀɴ⚠️ 」\`\`\`\n\nʙᴏᴛ ᴛᴇʟᴀʜ ᴅɪ ɴᴏɴᴀᴋᴛɪғᴋᴀɴ ᴜɴᴛᴜᴋ ɢʀᴜᴘ ɪɴɪ!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
 } else if (args[0] === "off") {
-if (!isBanChat) return replay('Already Unbanned')
+if (!isBanChat) return replay('ᴀʟʀᴇᴀᴅʏ ᴜɴʙᴀɴɴᴇᴅ')
 let off = banchat.indexOf(from)
 banchat.splice(off, 1)
-replay('Success in unbanning the gc')
+replay('sᴜᴄᴄᴇss ᴜɴʙᴀɴ ʙᴏᴛ ᴅɪ ɢʀᴜᴘ ɪɴɪ')
 } else {
   let buttonsntnsfw = [
   { buttonId: `${command} on`, buttonText: { displayText: 'Ban' }, type: 1 },
@@ -1748,7 +1748,7 @@ case 'botgrup':
 case 'botgroup':
 if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
-reply(` Don't forget to join yeah!
+reply(` ᴊᴀɴɢᴀɴ ʟᴜᴘᴀ ᴊᴏɪɴ !
 
 *GROUP 1*
 https://chat.whatsapp.com/B9cQxA0NWrXHtFclMS5awJ
@@ -2266,24 +2266,24 @@ if (isBanChat) return reply(mess.banChat)
  if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 {      
-   let txt = `「 *LEADERBOARD* 」\n\n`
+   let txt = `「 *ʟᴇᴀᴅᴇʀʙᴏᴀʀᴅ* 」\n\n`
      for (let i of _buruan){
-     txt += `➸ *ID :* ${i.id}\n`
-     txt += `*🐟Fish* : ${i.ikan}\n`
-     txt += `*🐔Chicken* : ${i.ayam}\n`
-     txt += `*🐇Rabbit* : ${i.kelinci}\n`
-     txt += `*🐑Sheep* : ${i.domba}\n`
-     txt += `*🐄Cow* : ${i.sapi}\n`
-     txt += `*🐘Elephant* : ${i.gajah}\n\n`
+     txt += `➸ *ɪᴅ :* ${i.id}\n`
+     txt += `*🐟ғɪsʜ* : ${i.ikan}\n`
+     txt += `*🐔ᴄʜɪᴄᴋᴇɴ* : ${i.ayam}\n`
+     txt += `*🐇ʀᴀʙʙɪᴛ* : ${i.kelinci}\n`
+     txt += `*🐑sʜᴇᴇᴘ* : ${i.domba}\n`
+     txt += `*🐄ᴄᴏᴡ* : ${i.sapi}\n`
+     txt += `*🐘ᴇʟᴇᴘʜᴀɴᴛ* : ${i.gajah}\n\n`
      }
     reply(txt)       
   }
  break
-case 'fishing': case 'fishing': {
+case 'fishing': case 'memancing': {
 	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
   if (!isInventoriBuruan){ addInventoriBuruan(m.sender) } 
-  if (isUmpan < 1) return reply('Your bait is running out!, try hunting and turning the meat into bait')
+  if (isUmpan < 1) return reply('Umpanmu hampir habis!, coba berburu dan ubah dagingnya menjadi umpan')
   reply("1 bait used")
   var ikannya = ikan[Math.floor(Math.random() * ikan.length)]
   var ditangkap = Math.ceil(Math.random() * 20)
@@ -2516,19 +2516,19 @@ if (isBanChat) return reply(mess.banChat)
  case 'heal':{
  	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
- if (!isCekDarah < 1) return reply('You can only heal when your blood is 0')
- if (isCekDarah > 100) return reply('Your blood is full')
- if (isPotion < 1) return reply('You have no potions, try to buy by #buy potion _amount_') 
+ if (!isCekDarah < 1) return reply('Anda hanya dapat menyembuhkan ketika darah Anda 0')
+ if (isCekDarah > 100) return reply('Darah Anda Sudah Full')
+ if (isPotion < 1) return reply('Anda tidak punya potion, coba beli dengan #buy potion _jumlah_') 
  addDarah(m.sender, 100)
  kurangPotion(m.sender, 1)
- reply('It worked, your blood is full')
+ reply('Berhasil,Darah Mu Kembali Full')
  }
  break
  case 'hunt':case 'hunting': { 
  	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
  if (!isDarah){ addInventoriDarah(m.sender, DarahAwal) }
- if (isCekDarah < 1) return reply('Your blood runs out, try to heal using potions') 
+ if (isCekDarah < 1) return reply('Darahmu habis, coba sembuhkan menggunakan potion') 
  if (!isInventoriBuruan){ addInventoriBuruan(m.sender) } 
   let luka = ["Pierced by a thorn while hunting","Slipped into the abyss while hunting","Scratched by a wild animal","Not careful","Entangled in roots","Fall while hunting"]
   let location = ["Jungle","Amazon Forest","Tropical Forest","Meadow","African Forest","Mountains"]
@@ -2754,8 +2754,8 @@ if (isBanChat) return reply(mess.banChat)
       {
        text: "Group Settings",
        footer: botname,
-       title: "Set your group settings here......",
-       buttonText: "Click Button",
+       title: "set pengaturan grup mu....",
+       buttonText: "kick button",
        sections
       }, { quoted : m }
     )  
@@ -4219,14 +4219,14 @@ if (!isAdmins && !isCreator) return replay(mess.admin)
 if (args[0] === "on") {
 if (AntiLink) return replay('Already activated')
 ntilink.push(from)
-replay('Success in turning on group chat antilink in this group')
+replay('sukses akrifkan antilink di grup ini')
 var groupe = await XeonBotInc.groupMetadata(from)
 var members = groupe['participants']
 var mems = []
 members.map(async adm => {
 mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
 })
-XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️Warning⚠️ 」\`\`\`\n\nIf you're not an admin, don't send the group link in this group or u will be kicked immediately`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️ᴡᴀʀɴɪɴɢ⚠️ 」\`\`\`\n\nᴊɪᴋᴀ  ʙᴜᴋᴀɴ ᴀᴅᴍɪɴ,ᴊᴀɴɢᴀɴ ᴋɪʀɪᴍ ʟɪɴᴋ ɢʀᴜᴘ ɪɴɪ`, contextInfo: { mentionedJid : mems }}, {quoted:m})
 } else if (args[0] === "off") {
 if (!AntiLink) return replay('Already deactivated')
 let off = ntilink.indexOf(from)
@@ -6276,7 +6276,7 @@ sourceUrl: args[0]
 XeonBotInc.sendMessage(from, buttonMessage, {quoted:m})
 }
 break
-  case 'tiktok':{
+  case 'downloadtiktok':{
   	if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
   if (!q) return reply('Masukkan Link!')
@@ -6311,7 +6311,7 @@ sourceUrl: q
 XeonBotInc.sendMessage(from, buttonMessage, {quoted:m})
 }
 break
-  case 'tiktoknowm': case 'ttnowm':{
+  case 'tt': case 'tiktok':{
   	if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
   if (!q) return reply('Masukkan Link !')

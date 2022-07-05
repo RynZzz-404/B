@@ -51,11 +51,11 @@ global.location = "ɪɴᴅᴏɴᴇsɪᴀ, ʙᴀɴᴅᴜɴɢ, ᴊᴀᴡᴀ ʙᴀ�
 global.botname = "ʏᴀɴɴ-ʙᴏᴛᴢ" //ur bot name
 global.websitex = "https://yann-executed-team.blogspot.com" //ur website
 global.vidmenu = { url: 'https://a.uguu.se/zlzQZvXH.mp4' } //gif and video menu
-global.packname = "ʏᴀɴɴ-ʙᴏᴛ\n\n\nsᴛɪᴄᴋᴇʀ"
-global.author = "ᴏᴡɴᴇʀ : 6282252285143\n\n✵"
-global.themeemoji = "😈"
+global.packname = "ʏᴀɴɴ-ʙᴏᴛ\nsᴛɪᴄᴋᴇʀ"
+global.author = "Owner Number ➪ : (Ryan) 6282252285143\n"
+global.themeemoji = "♲︎︎︎"
 global.reactmoji = "😼"
-global.ownertag = ['0'] //ur owner tag
+global.ownertag = ['999999999999'] //ur owner tag
 global.ownernummenu = ['6282252285143'] //ur owner number in menu and all
 global.watermark = "✯ ʏᴀɴɴ-ʙᴏᴛᴢ" //ur watermark
 global.botscript = "https://github.com/RyanStore/CheemsBot-MD3"
@@ -95,13 +95,13 @@ global.antitags = true
 global.prefa = ['','!','.','🐦','🐤','🗿']
 global.mess = {
     success: '*ᴅᴏɴᴇ🤖*',
-    admin: 'ғɪᴛᴜʀ ᴋʜᴜsᴜs ᴀᴅᴍɪɴ ɢʀᴜᴘ!😾',
+    admin: 'ғɪᴛᴜʀ ᴋʜᴜsᴜs ᴀᴅᴍɪɴ ɢʀᴜᴘ!😼',
     botAdmin: 'ᴊᴀᴅɪᴋᴀɴ ʙᴏᴛ sᴇʙᴀɢᴀɪ ᴀᴅᴍɪɴ ᴜɴᴛᴜᴋ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ғɪᴛᴜʀ ɪɴɪ😈',
     owner: 'ғɪᴛᴜʀ ᴋʜᴜsᴜs ᴏᴡɴᴇʀ ʙᴏᴛ😼',
     group: 'ᴋʜᴜsᴜs ᴅɪ ɢʀᴜᴘ😼',
     private: 'ᴋʜᴜsᴜs ᴘʀɪᴠᴀᴛᴇ ᴍᴇssᴀɢᴇ😼',
     bot: 'ғɪᴛᴜʀ ᴋʜᴜsᴜs ʙᴏᴛ👿',
-    wait: 'sᴇᴅᴀɴɢ ᴅɪ ᴘʀᴏsᴇs....👿',
+    wait: 'sᴇᴅᴀɴɢ ᴅɪ ᴘʀᴏsᴇs....😈',
     linkm: 'ᴍᴀsᴜᴋᴋᴀɴ ʟɪɴᴋ ɴʏᴀ👿',
     error: 'ᴇʀʀᴏʀ!!👹',
     ban: 'ᴍᴀᴀғ,ᴋᴀᴍᴜ ᴛᴇʟᴀʜ ᴅɪ ʙᴀɴɴᴇᴅ ᴏʟᴇʜ ᴏᴡɴᴇʀ!!,ʜᴜʙᴜɴɢɪ ᴏᴡɴᴇʀ ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴋᴀ ʙᴀɴɴᴇᴅ!😈',
