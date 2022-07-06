@@ -253,7 +253,7 @@ const isUser = pendaftar.includes(m.sender)
 // Other
 const isBan = banUser.includes(m.sender)
 const isBanChat = m.isGroup ? banchat.includes(from) : false
-const isRakyat = isCreator || global.rkyt.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender) || false
+const isRakyat = isCreator || global.rkyt.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender) || true
 const AntiLink = m.isGroup ? ntilink.includes(from) : false
 const AntiLinkYoutubeVid = m.isGroup ? ntilinkytvid.includes(from) : false
 const AntiLinkYoutubeChannel = m.isGroup ? ntilinkytch.includes(from) : false
@@ -804,7 +804,7 @@ global.hit = {}
 if (isCmd) {
 data = await fetchJson('https://api.countapi.xyz/hit/CheemsBot/visits')
 jumlahcmd = `${data.value}`
-dataa = await fetchJson(`https://api.countapi.xyz/hit/CheemsBot${moment.tz('Asia/Kolkata').format('DDMMYYYY')}/visits`)
+dataa = await fetchJson(`https://api.countapi.xyz/hit/CheemsBot${moment.tz('Asia/Jakarta').format('DDMMYYYY')}/visits`)
 jumlahharian = `${dataa.value}`
 }
  
@@ -3895,7 +3895,7 @@ if (isBanChat) return reply(mess.banChat)
 let anu = await store.chats.all().filter(v => v.id.endsWith('.net')).map(v => v)
 let teks = `     「 Personal Chat List 」\n\nThere are ${anu.length} users using bot in personal chat`
 for (let i of anu) {
- teks += `\n\nProfile : @${i.id.split('@')[0]}\nChat : ${i.unreadCount}\nLastchat : ${moment(i.conversationTimestamp * 1000).tz("Asia/Kolkata").format("DD/MM/YYYY HH:mm:ss")}`
+ teks += `\n\nProfile : @${i.id.split('@')[0]}\nChat : ${i.unreadCount}\nLastchat : ${moment(i.conversationTimestamp * 1000).tz("Asia/Jakarta").format("DD/MM/YYYY HH:mm:ss")}`
 }
 XeonBotInc.sendTextWithMentions(m.chat, teks, m)
 }
@@ -3912,7 +3912,7 @@ for (let i of anu) {
  } else {
  loldd = metadata.owner
  }
- teks += `\n\nName : ${metadata.subject ? metadata.subject : "undefined"}\nOwner : ${loldd ? '@' + loldd.split("@")[0] : "undefined"}\nID : ${metadata.id ? metadata.id : "undefined"}\nMade : ${metadata.creation ? moment(metadata.creation * 1000).tz('Asia/Kolkata').format('DD/MM/YYYY HH:mm:ss') : "undefined"}\nMember : ${metadata.participants.length ? metadata.participants.length : "undefined"}`
+ teks += `\n\nName : ${metadata.subject ? metadata.subject : "undefined"}\nOwner : ${loldd ? '@' + loldd.split("@")[0] : "undefined"}\nID : ${metadata.id ? metadata.id : "undefined"}\nMade : ${metadata.creation ? moment(metadata.creation * 1000).tz('Asia/Jakarta').format('DD/MM/YYYY HH:mm:ss') : "undefined"}\nMember : ${metadata.participants.length ? metadata.participants.length : "undefined"}`
 }
 XeonBotInc.sendTextWithMentions(m.chat, teks, m)
 }
@@ -5224,12 +5224,12 @@ tekse = `     「 Group Link Inspector 」
 ${themeemoji} ID : ${res.content[0].attrs.id ? res.content[0].attrs.id : "undefined"}
 ${themeemoji} Subject : ${res.content[0].attrs.subject ? res.content[0].attrs.subject : "undefined"}
 ${themeemoji} Subject update by : ${res.content[0].attrs.s_o.split("@")[0] ? "@" + res.content[0].attrs.s_o.split("@")[0] : "undefined"}
-${themeemoji} Subject update at : ${res.content[0].attrs.s_t ? moment(res.content[0].attrs.s_t *1000).tz("Asia/Kolkata").format("DD-MM-YYYY, HH:mm:ss") : "undefined"}
+${themeemoji} Subject update at : ${res.content[0].attrs.s_t ? moment(res.content[0].attrs.s_t *1000).tz("Asia/Jakarta").format("DD-MM-YYYY, HH:mm:ss") : "undefined"}
 ${themeemoji} Create by : ${res.content[0].attrs.creator ? "@" + res.content[0].attrs.creator.split("@")[0] : "undefined"}
-${themeemoji} Create at : ${res.content[0].attrs.creation ? moment(res.content[0].attrs.creation * 1000).tz("Asia/Kolkata").format("DD-MM-YYYY, HH:mm:ss") : "undefined"}
+${themeemoji} Create at : ${res.content[0].attrs.creation ? moment(res.content[0].attrs.creation * 1000).tz("Asia/Jakarta").format("DD-MM-YYYY, HH:mm:ss") : "undefined"}
 ${themeemoji} Total Members : ${res.content[0].attrs.size ? res.content[0].attrs.size : "undefined"} Members
 ${themeemoji} Desc update by : ${res.content[0].content[0].attrs.participant ? "@" + res.content[0].content[0].attrs.participant.split("@")[0] : "undefined"}
-${themeemoji} Desc update at : ${res.content[0].content[0].attrs.t ? moment(res.content[0].content[0].attrs.t * 1000).tz("Asia/Kolkata").format("DD-MM-YYYY, HH:mm:ss") : "undefined"}
+${themeemoji} Desc update at : ${res.content[0].content[0].attrs.t ? moment(res.content[0].content[0].attrs.t * 1000).tz("Asia/Jakarta").format("DD-MM-YYYY, HH:mm:ss") : "undefined"}
 ${themeemoji} Desc id : ${res.content[0].content[0].attrs.id ? res.content[0].content[0].attrs.id : "undefined"}
 ${themeemoji} Description : ${res.content[0].content[0].content[0].content ? res.content[0].content[0].content[0].content.toString() : "No Description"}
 `
@@ -5262,12 +5262,12 @@ tekse = `     「 Group Link Inspector 」
 ▸ ID : ${res.content[0].attrs.id ? res.content[0].attrs.id : "undefined"}
 ▸ Subject : ${res.content[0].attrs.subject ? res.content[0].attrs.subject : "undefined"}
 ▸ Subject update by : ${res.content[0].attrs.s_o.split("@")[0] ? "@" + res.content[0].attrs.s_o.split("@")[0] : "undefined"}
-▸ Subject update at : ${res.content[0].attrs.s_t ? moment(res.content[0].attrs.s_t *1000).tz("Asia/Kolkata").format("DD-MM-YYYY, HH:mm:ss") : "undefined"}
+▸ Subject update at : ${res.content[0].attrs.s_t ? moment(res.content[0].attrs.s_t *1000).tz("Asia/Jakarta").format("DD-MM-YYYY, HH:mm:ss") : "undefined"}
 ▸ Create by : ${res.content[0].attrs.creator ? "@" + res.content[0].attrs.creator.split("@")[0] : "undefined"}
-▸ Create on : ${res.content[0].attrs.creation ? moment(res.content[0].attrs.creation * 1000).tz("Asia/Kolkata").format("DD-MM-YYYY, HH:mm:ss") : "undefined"}
+▸ Create on : ${res.content[0].attrs.creation ? moment(res.content[0].attrs.creation * 1000).tz("Asia/Jakarta").format("DD-MM-YYYY, HH:mm:ss") : "undefined"}
 ▸ Total Members : ${res.content[0].attrs.size ? res.content[0].attrs.size : "undefined"} Members
 ▸ Desc update by : ${res.content[0].content[0].attrs.participant ? "@" + res.content[0].content[0].attrs.participant.split("@")[0] : "undefined"}
-▸ Desc update at : ${res.content[0].content[0].attrs.t ? moment(res.content[0].content[0].attrs.t * 1000).tz("Asia/Kolkata").format("DD-MM-YYYY, HH:mm:ss") : "undefined"}
+▸ Desc update at : ${res.content[0].content[0].attrs.t ? moment(res.content[0].content[0].attrs.t * 1000).tz("Asia/Jakarta").format("DD-MM-YYYY, HH:mm:ss") : "undefined"}
 ▸ Desc id : ${res.content[0].content[0].attrs.id ? res.content[0].content[0].attrs.id : "undefined"}
 ▸ Description : ${res.content[0].content[0].content[0].content ? res.content[0].content[0].content[0].content.toString() : "No Description"}
 `
@@ -5401,10 +5401,10 @@ case 'bass': case 'blown': case 'deep': case 'earrape': case 'fast': case 'fat':
                 reply(e)
                 }
                 break
-case 'write': {
+case 'nulis': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
-if (args.length < 1) return reply(`Example :\n${prefix}nulis Aldi|91|#ff020a|Manusia terganteng adalah salman alfarizi`)
+if (args.length < 1) return reply(`Example :\n${prefix}nulis Jordi|91|#ff020a|Manusia terganteng adalah salman alfarizi`)
 const nls = args.join(" ")
 const nams = "Name : " + nls.split("|")[0];
 const kels = "Class : " + nls.split("|")[1];
@@ -5418,7 +5418,7 @@ const jangkel = kels.replace(/(\S+\s*){1,10}/g, '$&\n')
 if (kels.length > 12) return reply("Maximum number of class texts 4")
 if (nams.length > 34) return reply("The maximum number of text is 27")
 if (codewarn.length > 7) return reply("Maximum number of color text 7")
-console.log('「 WRITING 」is in process')
+console.log('「 MENULIS... 」Sedang Di Proses..')
 spawn('convert', [
 './XeonMedia/image/magernulis.jpg',
 '-fill',
@@ -5479,7 +5479,7 @@ XeonBotInc.sendMessage(from, {image:fs.readFileSync('./storage/hasilnulis.jpg'),
 exec(`npm i marker`)
 }
 break
-case 'calculator': case 'cal': {
+case 'calculator': case 'Kalkulator': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (args.length < 1) return reply(`*Example :*\n${prefix}calculator 2 * 5\n\n*List of Numbers :*\n•> Time : *\n•> For : /\n•> Plus : +\n•> Not enough : -`)
@@ -5517,7 +5517,7 @@ reply('Successful Change To Self Usage')
 XeonBotInc.setStatus(`Mode : Self`)
 }
 break
-case 'speed': case 'p': case 'ping': case 'botstatus': case 'statusbot': {
+case 'speed': case 'infobot': case 'ping': case 'botstatus': case 'statusbot': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 const used = process.memoryUsage()
@@ -5585,7 +5585,7 @@ if (isBanChat) return reply(mess.banChat)
             }
             }
             break
-case 'emojimix2': {
+case 'emojimix2': case 'mix2': {
 	   if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 	    if (!text) return reply(`Example : ${prefix + command} 😅`)
@@ -5634,7 +5634,7 @@ await XeonBotInc.sendMessage(m.chat, { video: { url: webpToMp4.result, caption: 
 await fs.unlinkSync(media)
 }
 break
-case 'toaud': case 'toaudio': {
+case 'tomp3': case 'toaudio': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (!/video/.test(mime) && !/audio/.test(mime)) return reply(`Send/Reply Video/Audio You Want To Use As Audio With Caption ${prefix + command}`)
@@ -5646,7 +5646,7 @@ let audio = await toAudio(media, 'mp4')
 XeonBotInc.sendMessage(m.chat, {audio: audio, mimetype: 'audio/mpeg'}, { quoted : m })
 }
 break
-case 'tomp3': {
+case 'toaud': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (/document/.test(mime)) return reply(`Send/Reply Video/Audio You Want To Convert Into MP3 With Caption ${prefix + command}`)
@@ -5861,7 +5861,7 @@ gis(args.join(" "), async (error, result) => {
 n = result
 images = n[Math.floor(Math.random() * n.length)].url
 let buttons = [
-{buttonId: `gimage ${args.join(" ")}`, buttonText: {displayText: 'Next Image 👀'}, type: 1}
+{buttonId: `gimage ${args.join(" ")}`, buttonText: {displayText: 'Next Image'}, type: 1}
 ]
 let buttonMessage = {
 image: { url: images },
@@ -6080,7 +6080,7 @@ if (isBanChat) return reply(mess.banChat)
                 })
             }
             break
-            case 'twitter': case 'td': case 'twitterdl': {     
+            case 'twitter': case 'twitterdl': {     
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)	             
              if (!text) return reply(`Masukkan Link !`)
@@ -6159,7 +6159,7 @@ case 'twddlxx': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 let buttons = [
-{buttonId: `menu`, buttonText: {displayText: 'Menu 🐥'}, type: 1}
+{buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
 ]
 let buttonMessage = {
 video: {url:args[0]},
@@ -6256,7 +6256,7 @@ case 'fbddlxx': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 let buttons = [
-{buttonId: `menu`, buttonText: {displayText: 'Menu 🐥'}, type: 1}
+{buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
 ]
 let buttonMessage = {
 video: {url:args[0]},
